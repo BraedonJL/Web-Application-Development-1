@@ -1,0 +1,290 @@
+Relative length units
+
+.wrapper {
+  font-size: 1em;
+}
+
+.px {
+  width: 200px;
+}
+
+.vw {
+  width: 10vw;
+}
+
+.em {
+  width: 10em;
+}
+<div class="wrapper">
+  <div class="box px">I am 200px wide</div>
+  <div class="box vw">I am 10vw wide</div>
+  <div class="box em">I am 10em wide</div>
+</div>
+
+Relative length units2
+
+.wrapper {
+  width: 400px;
+  border: 5px solid rebeccapurple;
+}
+
+.px {
+  width: 200px;
+}
+
+.percent {
+  width: 40%;
+}
+<div class="box px">I am 200px wide</div>
+<div class="box percent">I am 40% wide</div>
+<div class="wrapper">
+  <div class="box px">I am 200px wide</div>
+  <div class="box percent">I am 40% wide</div>
+</div>
+
+Heading/List
+
+html {
+  font-size: 16px;
+}
+
+.ems li {
+  font-size: 1.3em;
+}
+
+.rems li {
+  font-size: 1.3rem;
+}
+<ul class="ems">
+  <li>One</li>
+  <li>Two</li>
+  <li>Three
+    <ul>
+      <li>Three A</li>
+      <li>Three B
+        <ul>
+          <li>Three B 2</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<ul class="rems">
+  <li>One</li>
+  <li>Two</li>
+  <li>Three
+    <ul>
+      <li>Three A</li>
+      <li>Three B
+        <ul>
+          <li>Three B 2</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+Heading/List2
+
+li {
+  font-size: 80%;
+}
+<ul>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three
+    <ul>
+      <li>Three A</li>
+      <li>Three B
+        <ul>
+          <li>Three B 2</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>  
+
+Numbers
+
+.box {
+  opacity: 0.6;
+}
+<div class="wrapper">
+  <div class="box">I am a box with opacity</div>
+</div>
+
+Color keywords
+
+.one {
+  background-color: antiquewhite;
+}
+
+.two {
+  background-color: blueviolet;
+}
+
+.three {
+  background-color: greenyellow;
+}
+
+<div class="wrapper">
+  <div class="box one">antiquewhite</div>
+  <div class="box two">blueviolet</div>
+  <div class="box three">greenyellow</div>
+</div>
+
+Hexadecimal RGB values
+
+.one {
+  background-color: #02798b;
+}
+
+.two {
+  background-color: #c55da1;
+}
+
+.three {
+  background-color: #128a7d;
+}
+
+<div class="wrapper">
+  <div class="box one">#02798b</div>
+  <div class="box two">#c55da1</div>
+  <div class="box three">#128a7d</div>
+</div>
+
+RGB and RGBA values
+
+.one {
+  background-color: rgb(2, 121, 139);
+}
+
+.two {
+  background-color: rgb(197, 93, 161);
+}
+
+.three {
+  background-color: rgb(18, 138, 125);
+}
+
+<div class="wrapper">
+  <div class="box one">rgb(2, 121, 139)</div>
+  <div class="box two">rgb(197, 93, 161)</div>
+  <div class="box three">rgb(18, 138, 125)</div>
+</div>
+
+RGB and RGBA values2
+
+.one {
+  background-color: rgba(2, 121, 139, .3);
+}
+
+.two {
+  background-color: rgba(197, 93, 161, .7);
+}
+
+.three {
+  background-color: rgba(18, 138, 125, .9);
+}
+
+<div class="wrapper">
+  <div class="box one">rgba(2, 121, 139, .3)</div>
+  <div class="box two">rgba(197, 93, 161, .7)</div>
+  <div class="box three">rgba(18, 138, 125, .9)</div>
+</div>
+
+HSL and HSLA values
+
+.one {
+  background-color: hsl(188, 97%, 28%);
+}
+
+.two {
+  background-color: hsl(321, 47%, 57%);
+}
+
+.three {
+  background-color: hsl(174, 77%, 31%);
+}
+
+<div class="wrapper">
+  <div class="box one">hsl(188, 97%, 28%)</div>
+  <div class="box two">hsl(321, 47%, 57%)</div>
+  <div class="box three">hsl(174, 77%, 31%)</div>
+</div>
+
+HSL and HSLA values2
+
+.one {
+  background-color: hsl(188, 97%, 28%);
+}
+
+.two {
+  background-color: hsl(321, 47%, 57%);
+}
+
+.three {
+  background-color: hsl(174, 77%, 31%);
+}
+
+<div class="wrapper">
+  <div class="box one">hsla(188, 97%, 28%, .3)</div>
+  <div class="box two">hsla(321, 47%, 57%, .7)</div>
+  <div class="box three">hsla(174, 77%, 31%, .9)</div>
+</div>
+
+Images
+
+.image {
+  background-image: url(star.png);
+}
+
+.gradient {
+  background-image: linear-gradient(90deg, rgba(119,0,255,1) 39%, rgba(0,212,255,1) 100%);
+}
+
+<div class="box image"></div>
+<div class="box gradient"></div>
+
+Images2/Position
+
+.box {
+  height: 300px;
+  width: 400px;
+  background-image: url(star.png);
+  background-repeat: no-repeat;
+  background-position: right 40px;
+}
+
+<div class="box"></div>
+
+Strings and identifiers
+
+.box {
+  width:400px;
+  padding: 1em;
+  border-radius: .5em;
+  border: 5px solid rebeccapurple;
+  background-color: lightblue;
+}
+
+.box::after {
+  content: "This is a string. I know because it is quoted in the CSS."
+}
+
+<div class="box"></div> 
+
+Functions
+
+.wrapper {
+  width: 400px;
+}
+
+.box {
+  width: calc(20% + 100px);
+}
+
+<div class="wrapper">
+  <div class="box">My width is calculated.</div> 
+</div>
