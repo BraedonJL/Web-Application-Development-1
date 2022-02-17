@@ -1,0 +1,191 @@
+Heading1
+h1 { 
+    color: red; 
+}
+h1 { 
+    color: blue; 
+}
+ h1>This is my heading.</h1>
+ 
+Heading2
+.main-heading { 
+    color: red; 
+}
+        
+h1 { 
+    color: blue; 
+}
+<h1 class="main-heading">This is my heading.</h1>
+
+Heading3
+
+h2 {
+    font-size: 2em;
+    color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+        
+.small {
+    font-size: 1em;
+}
+        
+.bright {
+    color: rebeccapurple;
+}         
+    
+<h2>Heading with no class</h2>
+<h2 class="small">Heading with class of small</h2>
+<h2 class="bright">Heading with class of bright</h2>
+
+Universal selector
+
+/* specificity: 0101 */
+#outer a {
+    background-color: red;
+}
+        
+/* specificity: 0201 */
+#outer #inner a {
+    background-color: blue;
+}
+
+/* specificity: 0104 */
+#outer div ul li a {
+    color: yellow;
+}
+
+/* specificity: 0113 */
+#outer div ul .nav a {
+    color: white;
+}
+
+/* specificity: 0024 */
+div div li:nth-child(2) a:hover {
+    border: 10px solid black;
+}
+
+/* specificity: 0023 */
+div li:nth-child(2) a:hover {
+    border: 10px dashed black;
+}
+
+/* specificity: 0033 */
+div div .nav:nth-child(2) a:hover {
+    border: 10px double black;
+}
+
+a {
+    display: inline-block;
+    line-height: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}            
+
+div id="outer" class="container">
+    <div id="inner" class="container">
+        <ul>
+            <li class="nav"><a href="#">One</a></li>
+            <li class="nav"><a href="#">Two</a></li>
+        </ul>
+    </div>
+</div>
+
+Paragraph1
+
+body {
+    color: blue;
+}
+
+span {
+    color: black;
+}
+<p>As the body has been set to have a color of blue this is inherited through the descendants.</p>
+<p>We can change the color by targeting the element with a selector, such as this <span>span</span>.</p>
+
+Paragraph2
+
+#winning {
+    background-color: red;
+    border: 1px solid black;
+}
+    
+.better {
+    background-color: gray;
+    border: none !important;
+}
+    
+p {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}           
+<p class="better">This is a paragraph.</p>
+<p class="better" id="winning">One selector to rule them all!</p>
+
+List1
+
+main {
+    color: rebeccapurple;
+    border: 2px solid #ccc;
+    padding: 1em;
+}
+
+.special {
+    color: black;
+    font-weight: bold;
+}
+ul class="main">
+    <li>Item One</li>
+    <li>Item Two
+        <ul>
+            <li>2.1</li>
+            <li>2.2</li>
+        </ul>
+    </li>
+    <li>Item Three
+        <ul class="special">
+            <li>3.1
+                <ul>
+                    <li>3.1.1</li>
+                    <li>3.1.2</li>
+                </ul>
+            </li>
+            <li>3.2</li>
+        </ul>
+    </li>
+</ul>
+
+List2 and Link1
+  
+body {
+    color: green;
+}
+          
+.my-class-1 a {
+    color: inherit;
+}
+          
+.my-class-2 a {
+    color: initial;
+}
+          
+.my-class-3 a {
+    color: unset;
+}
+<ul>
+    <li>Default <a href="#">link</a> color</li>
+    <li class="my-class-1">Inherit the <a href="#">link</a> color</li>
+    <li class="my-class-2">Reset the <a href="#">link</a> color</li>
+    <li class="my-class-3">Unset the <a href="#">link</a> color</li>
+</ul>
