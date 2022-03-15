@@ -1,0 +1,120 @@
+CSS box model
+
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+div {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+
+CSS overflow model
+
+div {
+  width: 200px;
+  height: 65px;
+  background-color: coral;
+  overflow: visible;
+}
+
+div {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; /* Add vertical scrollbar */
+}
+
+Css Borders
+
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+Creating a circle using borders
+
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+Creating a elipse board
+
+ellipse{
+    background-color: #45597e;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+ellipse{
+    background-color: #45597e;
+    height: 100px;
+    width: 150px;
+}
+
+Block verses inline elements.
+
+<p>Hello World</p>
+<div>Hello World</div>
+
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+
+Css display property
+
+p.ex1 {display: none;}
+p.ex2 {display: inline;}
+p.ex3 {display: block;}
+p.ex4 {display: inline-block;}
+
+.a {
+  display: contents;
+  border: 2px solid red;
+  background-color: #ccc;
+  padding: 10px;
+  width: 200px;
+}
+
+.b {
+  border: 2px solid blue;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+Text Shadows
+
+h1 {
+  text-shadow: 2px 2px #ff0000;
+}
+
+CSS box shadow
+
+#example1 {
+  box-shadow: 5px 10px;
+}
+
+#example2 {
+  box-shadow: 5px 10px #888888;
+}
