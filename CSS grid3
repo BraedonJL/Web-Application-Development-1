@@ -1,0 +1,54 @@
+Grid Elements
+
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>
+</div>
+
+Display Property
+
+.grid-container {
+  display: grid;
+}
+
+.grid-container {
+  display: inline-grid;
+}
+
+.grid-container {
+  display: grid;
+  column-gap: 50px;
+}
+
+.grid-container {
+  display: grid;
+  row-gap: 50px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 50px 100px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 50px;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.item1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
