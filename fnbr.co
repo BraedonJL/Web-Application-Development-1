@@ -1,0 +1,28 @@
+{
+    "status": 200,
+    "data": [
+        {
+            "id": "5ab16c0e5f957f27504aa4e4", // An ID for use within fnbr.co
+            "name": "Ghoul Trooper", // The name of the cosmetic
+            "price": "1,500", // The price of the cosmetic (string)
+            "priceIcon": "vbucks", // The price icon
+            "priceIconLink": "https://image.fnbr.co/price/icon_vbucks.png", // A link to the price icon
+            "images": { // Object containing all image urls
+                "icon": "https://image.fnbr.co/outfit/5ab16c0e5f957f27504aa4e4/icon.png", // The 'icon' url, all items have this value or placeholder url
+                "png": "https://image.fnbr.co/outfit/5ab16c0e5f957f27504aa4e4/png.png", // An optional 'png' url
+                "gallery": "https://image.fnbr.co/outfit/5ab16c0e5f957f27504aa4e4/gallery.jpg", // An optional 'gallery' url, this value is DEPRECATED
+                "featured": "https://image.fnbr.co/outfit/5ab16c0e5f957f27504aa4e4/featured.png", // An optional 'featured' url
+                "resizeAvailable": true // If there are resizes available for icon and featured 
+            },
+            "rarity": "epic", // The rarity as a lowercase string
+            "type": "outfit", // The item type as a lowercase string
+            "slug": "ghoul-trooper", // The url 'slug' for this item
+            "readableType": "Outfit", // A user presentable version of the item type
+            "description": "Epic ghoul trooper outfit." // The description of this item
+        }
+    ],
+    "query": { // The incoming query as the server understood it
+        "search": "ghoul trooper", // The search parameter
+        "limit": 1 // The limit provided, or default of 1
+    }
+}
